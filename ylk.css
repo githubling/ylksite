@@ -14,6 +14,36 @@ body, p, ul, ol {
 	font-style: normal;
 	font-size: 16px;
 }
+.fixed-nav-wrapper {
+	width: 100%;
+	background: white;
+	z-index: 1;
+	position: fixed;
+	top: -100%;
+	left: 0;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+	transition: all 0.65s;
+	-webkit-transition: all 0.65s;
+}
+.fixed-nav-wrapper .fixed-nav {
+	margin: 0;
+	text-transform: uppercase;
+	float: left;
+	margin-left: 24px;
+}
+.fixed-nav-wrapper.show {
+	top: 0;
+	transition: all 0.65s;
+	-webkit-transition: all 0.65s; 
+}
+.fixed-subscribe {
+	float: right;
+	margin-top: 10px;
+	margin-right: 24px;
+}
+.fixed-subscribe form {
+	margin: 0;
+}
 .site {
 	margin: 0 auto;
 	padding: 50px;
@@ -165,7 +195,7 @@ hr {
 	outline: none;
 	min-width: 250px;
 }
-.newsletter button {
+button {
 	background-color: #fff;
 	margin: 0;
 	vertical-align: baseline;
@@ -186,7 +216,7 @@ hr {
 	outline: none;
 	-webkit-appearance: none;
 }
-.newsletter button:hover {
+button:hover {
 	background-color: #272727;
 	color: #fff;
 }

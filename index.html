@@ -7,12 +7,28 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	<body>
+		<div class="fixed-nav-wrapper">
+			<ul class='fixed-nav page-nav'>
+				<li class='active'><a href="#">About</a></li>
+				<li><a href="#">Work With Me</a></li>
+				<li><a href="#">Praise</a></li>
+				<li><a href="#">Contact Me</a></li>
+			</ul>
+			<div class='fixed-subscribe'>
+				<form>
+					<div class='field-wrapper'>
+						<input class='email-field' type="text" placeholder="Email Address" spellcheck="false" name="email" x-autocompletetype="email">
+					</div>
+					<button class='submit-button' type="submit" value="Sign Up">Subscribe</button>					
+				</form>
+			</div>			
+		</div>
 		<div class="site">
 			<div class='page'>
 				<div class='hero'>
 					<h1 class='hero-title'>Yvonne Ling Kao</h1>
 					<h3 class='tagline'>Taking Mamas from "Surviving" to "Thriving"</h3>
-					<ul class='page-nav'>
+					<ul class='inline-nav page-nav'>
 						<li class='active'><a href="#">About</a></li>
 						<li><a href="#">Work With Me</a></li>
 						<li><a href="#">Praise</a></li>
@@ -28,7 +44,9 @@
 						<h2>Subscribe</h2>
 						<p>Sign up with your email address to receive news and updates.</p>
 						<form method="POST" action="#">
-							<div class='field-wrapper'><input class='email-field' type="text" placeholder="Email Address" spellcheck="false" name="email" x-autocompletetype="email"></input></div>
+							<div class='field-wrapper'>
+								<input class='email-field' type="text" placeholder="Email Address" spellcheck="false" name="email" x-autocompletetype="email">
+							</div>
 							<button class='submit-button' type="submit" value="Sign Up">Sign Up</button>
 						</form>
 						<p class='newsletter-footnote'>We respect your privacy. We will never SPAM you or sell your information to a third party.</p>
@@ -65,6 +83,8 @@
 				</div>
 			</div>
 		</div>
-		<script type="text/javascript" src="ylk.js"></script>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="jquery-scrollspy.js"></script>
+		<script src="ylk.js"></script>
 	</body>
 </html>
